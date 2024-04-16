@@ -30,7 +30,7 @@
         free(response_ptr->server_log);                                       \
         free(response_ptr);}                                                  \
     })
-    
+
 
 /**
  * @brief Should be used as hash function for server IDs,

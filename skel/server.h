@@ -10,7 +10,7 @@
 #include "lru_cache.h"
 
 #define TASK_QUEUE_SIZE         1000
-#define MAX_LOG_LENGTH          100
+#define MAX_LOG_LENGTH          1000
 #define MAX_RESPONSE_LENGTH     4096
 
 typedef struct server {
