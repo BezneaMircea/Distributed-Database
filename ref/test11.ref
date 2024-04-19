@@ -22,6 +22,9 @@
 [Server 0]-Response: Laptop
 [Server 0]-Log: Cache HIT for 2fe5f9f583
 
+[Server 2]-Response: Document 5a51719f5ec has been created
+[Server 2]-Log: Cache MISS for 5a51719f5ec
+
 [Server 0]-Response: Laptop
 [Server 0]-Log: Cache HIT for 2fe5f9f583
 

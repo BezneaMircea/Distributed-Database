@@ -22,14 +22,17 @@
 [Server 58994]-Response: Yardley English Rose and Lace Satin Combo Set
 [Server 58994]-Log: Cache HIT for 01b6bf2eec234b6abd72cb911a987718
 
-[Server 58994]-Response: (null)
-[Server 58994]-Log: Document 387fcce410a123886646a6516bfaf00c doesn't exist
+[Server 18963]-Response: Document 387fcce410a123886646a6516bfaf00c has been created
+[Server 18963]-Log: Cache MISS for 387fcce410a123886646a6516bfaf00c
+
+[Server 58994]-Response: Entease Women's Solid Casual Shirt
+[Server 58994]-Log: Cache MISS for 387fcce410a123886646a6516bfaf00c
 
 [Server 58994]-Response: Request- EDIT 1b9ffd27e08fe32637df6192675cf791 - has been added to queue
 [Server 58994]-Log: Task queue size is 1
 
-[Server 87355]-Response: (null)
-[Server 87355]-Log: Document 387fcce410a123886646a6516bfaf00c doesn't exist
+[Server 87355]-Response: Entease Women's Solid Casual Shirt
+[Server 87355]-Log: Cache MISS for 387fcce410a123886646a6516bfaf00c
 
 [Server 58994]-Response: Document 1b9ffd27e08fe32637df6192675cf791 has been created
 [Server 58994]-Log: Cache MISS for 1b9ffd27e08fe32637df6192675cf791
@@ -55,8 +58,8 @@
 [Server 87355]-Response: Document 22d4241df1e82dcf8ee652b2eafaa789 has been created
 [Server 87355]-Log: Cache MISS for 22d4241df1e82dcf8ee652b2eafaa789
 
-[Server 87355]-Response: (null)
-[Server 87355]-Log: Document 387fcce410a123886646a6516bfaf00c doesn't exist
+[Server 87355]-Response: Entease Women's Solid Casual Shirt
+[Server 87355]-Log: Cache HIT for 387fcce410a123886646a6516bfaf00c
 
 [Server 58994]-Response: Request- EDIT fec1001c82e3de8c001b9d4a10fad6e1 - has been added to queue
 [Server 58994]-Log: Task queue size is 2
@@ -93,6 +96,9 @@
 
 [Server 13139]-Response: Maggie Women's A-line Dress
 [Server 13139]-Log: Cache MISS for 1b9ffd27e08fe32637df6192675cf791
+
+[Server 87355]-Response: Document d3c1d508756f01039612cf9231a43f50 has been created
+[Server 87355]-Log: Cache MISS for d3c1d508756f01039612cf9231a43f50
 
 [Server 61772]-Response: Leebonee Women's Leggings
 [Server 61772]-Log: Cache HIT for 01bcf5ce7863ff2df1b4b0353b6b91d7
@@ -142,14 +148,14 @@
 [Server 4821]-Response: Document 073dbba7be299e1aa78efb5bf4b83636 has been created
 [Server 4821]-Log: Cache MISS for 073dbba7be299e1aa78efb5bf4b83636
 
-[Server 4821]-Response: (null)
-[Server 4821]-Log: Document a17f10f8b089fe854904fba2b587c015 doesn't exist
+[Server 4821]-Response: Pearl Paradise Briolette With Ruby Red. Swarovski Crystal Stone Dangle Earring
+[Server 4821]-Log: Cache MISS for a17f10f8b089fe854904fba2b587c015
 
 [Server 58994]-Response: Document d3176e405109c3cf796ecd3580493932 has been created
 [Server 58994]-Log: Cache MISS for d3176e405109c3cf796ecd3580493932
 
-[Server 4821]-Response: (null)
-[Server 4821]-Log: Document 387fcce410a123886646a6516bfaf00c doesn't exist
+[Server 4821]-Response: Entease Women's Solid Casual Shirt
+[Server 4821]-Log: Cache MISS for 387fcce410a123886646a6516bfaf00c
 
 [Server 4821]-Response: Indian Charm Black Poth Beads Glass Necklace
 [Server 4821]-Log: Cache MISS for 4033035fa6208147ed62aabad12a1aab
@@ -166,6 +172,6 @@
 [Server 61772]-Response: Leebonee Women's Leggings
 [Server 61772]-Log: Cache HIT for 01bcf5ce7863ff2df1b4b0353b6b91d7
 
-[Server 4821]-Response: (null)
-[Server 4821]-Log: Document 387fcce410a123886646a6516bfaf00c doesn't exist
+[Server 4821]-Response: Entease Women's Solid Casual Shirt
+[Server 4821]-Log: Cache HIT for 387fcce410a123886646a6516bfaf00c
 
