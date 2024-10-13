@@ -17,8 +17,6 @@ typedef struct load_balancer {
      *       the functionality for a single server */
     server *test_server;
 
-    /* TODO: add fields needed for a hashring with
-             multiple servers */
 } load_balancer;
 
 
