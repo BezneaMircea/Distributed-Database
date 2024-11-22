@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "load_balancer.h": "c",
+        "lru_cache.h": "c",
+        "structuri.h": "c"
+    }
+}

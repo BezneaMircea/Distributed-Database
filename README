@@ -1,0 +1,46 @@
+# Beznea Mircea-Andrei
+
+# TEMA 2 - Distributed Database
+
+-------------------------------------------------------------------------------
+
+# DESCRIERE:
+
+# Implementare cache:
+
+O sa pastram in hashtable atat continutul documentului cat si un pointer catre
+nodul corespunzator in lista de ordine
+In lista de ordine nu vom pastra decat cheile (numele documentelor).
+
+Pe langa functiile HashMapului, complexitatea constata a acestei implementari 
+este asigurata de doua functii suplimentare pe listde dublu inlantuite
+circulare. Mai exact, "remove_a_node" si "dll_remove_nth_node_from_the_end".
+
+# Implementare server:
+
+Arhitectura cu 3 componente va fi reprezentata de o coada din "queue.c"
+cacheul, si un HashMap care va reprezenta Local_data-base. In structura de
+server vom adauga si idul unic al acestuia drept un int.
+
+# Implementare load_balancer:
+
+Pastraza un vector de pointeri spre servere, un vector de ordine care retine
+structuri cu 2 campuri: server_id si server_hash si evident functiile cu
+ajutorul carora vom face hashul atat pe servere (int) cat si pe documente
+(char *).
+
+Din punct de vedere al complexitatii vom gasi in O(log n) serverul care va
+primi un request, restul functionalitatilor se vor executa in O(n)
+-------------------------------------------------------------------------------
+
+# Testare:
+
+Pentru testare se pot rula in Linux CLI urmatoarele comenzi din directorul src:
+
+make
+./program ../in/test$(testNr).in
+
+Si se poate compara cu ref. Checkerul nu este inclus in acest repository 
+
+
+Multumesc pentru atentie!
