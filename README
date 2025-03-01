@@ -1,46 +1,42 @@
 # Beznea Mircea-Andrei
 
-# TEMA 2 - Distributed Database
+## TOPIC 2 - Distributed Database
 
--------------------------------------------------------------------------------
+---
 
-# DESCRIERE:
+### DESCRIPTION:
 
-# Implementare cache:
+#### Cache Implementation:
+We will store both the document content and a pointer to the corresponding node in the ordered list in the hashtable.  
+The ordered list will only store the keys (the document names).
 
-O sa pastram in hashtable atat continutul documentului cat si un pointer catre
-nodul corespunzator in lista de ordine
-In lista de ordine nu vom pastra decat cheile (numele documentelor).
+In addition to the functions of the HashMap, the constant complexity of this implementation is ensured by two additional functions on a circular doubly linked list: `remove_a_node` and `dll_remove_nth_node_from_the_end`.
 
-Pe langa functiile HashMapului, complexitatea constata a acestei implementari 
-este asigurata de doua functii suplimentare pe listde dublu inlantuite
-circulare. Mai exact, "remove_a_node" si "dll_remove_nth_node_from_the_end".
+#### Server Implementation:
+The architecture with 3 components will consist of:
+- A queue from `queue.c`
+- A cache
+- A HashMap that will represent the Local Data Base
 
-# Implementare server:
+The server structure will also include its unique ID as an integer.
 
-Arhitectura cu 3 componente va fi reprezentata de o coada din "queue.c"
-cacheul, si un HashMap care va reprezenta Local_data-base. In structura de
-server vom adauga si idul unic al acestuia drept un int.
+#### Load Balancer Implementation:
+The load balancer will maintain:
+- An array of pointers to servers
+- An order array that holds structures with two fields: `server_id` and `server_hash`
+- Functions to perform hashing both on servers (int) and on documents (char *)
 
-# Implementare load_balancer:
+In terms of complexity:
+- Finding the server that will handle a request will be done in `O(log n)`
+- The remaining functionalities will be executed in `O(n)`
 
-Pastraza un vector de pointeri spre servere, un vector de ordine care retine
-structuri cu 2 campuri: server_id si server_hash si evident functiile cu
-ajutorul carora vom face hashul atat pe servere (int) cat si pe documente
-(char *).
+---
 
-Din punct de vedere al complexitatii vom gasi in O(log n) serverul care va
-primi un request, restul functionalitatilor se vor executa in O(n)
--------------------------------------------------------------------------------
+### TESTING:
 
-# Testare:
+To test, run the following commands in the Linux CLI from the `src` directory:
 
-Pentru testare se pot rula in Linux CLI urmatoarele comenzi din directorul src:
-
+```bash
 make
-./program ../in/test$(testNr).in
-
-Si se poate compara cu ref. Checkerul nu este inclus in acest repository 
-
-
-Multumesc pentru atentie!
+./program ../in/test$(testNr).in  
+The actual checker is not included in this repository
